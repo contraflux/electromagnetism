@@ -82,4 +82,4 @@ function loadFromBinary()
     return grid, charges, Es, Bs
 end
 
-plot("sim_run_4")
+plot("sim_run")
