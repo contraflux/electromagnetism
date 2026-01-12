@@ -16,6 +16,7 @@ contraflux
 
 using JLD2
 using LinearAlgebra
+using REPL
 
 include("../calculus.jl")
 include("../physics.jl")

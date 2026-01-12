@@ -44,7 +44,7 @@ function plot(filename)
 
         electric_lengths = [hypot(e...) for e in E]
         electric_max_length = maximum(electric_lengths)
-        electric_colors = [RGBAf(1, 0, 0, l) for l in electric_lengths]
+        electric_colors = [RGBAf(1, 0, 0, l/electric_max_length) for l in electric_lengths]
 
         magnetic_lengths = [hypot(b...) for b in B]
         magnetic_max_length = maximum(magnetic_lengths)
@@ -67,7 +67,7 @@ function plot(filename)
         end
         
         ax.elevation[] = π/8
-        ax.azimuth[] = (π/8) + (π/4) * i / (101 * 2)
+        ax.azimuth[] = π/8
     end
 
     println("Plot complete! Saved to \" " * filename * ".mp4\" ")

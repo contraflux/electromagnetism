@@ -19,6 +19,8 @@ Jefimenko-Feynman script once completed.
 A number of example simulations can be found in **/runs**
 
 ## Other
-The three external scripts, **calculus.jl**, **physics.jl**, and
+Three external scripts, **calculus.jl**, **physics.jl**, and
 **runge_kutta.jl** contain helper functions for both the
-Jefimenko-Feynman and Causal-RK4 simulations.
+Jefimenko-Feynman and Causal-RK4 simulations. The last script,
+**pc_configs.jl** contains some interesting configurations
+of point charges that can be inserted into either simulation.
